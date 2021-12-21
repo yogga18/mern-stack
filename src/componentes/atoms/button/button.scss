@@ -1,0 +1,17 @@
+.button {
+    padding: 12px;
+    font-size: 16px;
+    width: 120px;
+    background-color:rgb(34, 128, 165);
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: skyblue;
+        color: #111;
+        font-weight: bold;
+        transition: 0.5s ease-in-out;
+    }
+}

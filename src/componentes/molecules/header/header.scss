@@ -1,0 +1,28 @@
+@import '../../../assets/scss/mixins/hoverEffect';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    background-color: rgb(42, 165, 97);
+    .logo-app {
+        font-size: 20px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin: 0px;
+        cursor: pointer;
+        &:hover {
+            @include hoverEffect(.7, .5s ease-in-out)
+        }
+    }
+    .menu-item {
+        font-size: 18px;
+        color: whitesmoke;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            @include hoverEffect(.7, .5s ease-in-out)
+        }
+    }
+}

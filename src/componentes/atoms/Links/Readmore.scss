@@ -1,0 +1,11 @@
+.read-more {
+  color: rgb(20, 20, 119);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    color: blue;
+    transition: 0.4s ease-in-out;
+  }
+}

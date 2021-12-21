@@ -1,0 +1,36 @@
+@import '../../../assets/scss/mixins/hoverEffect';
+
+.blog-item {
+  width: calc(50% - 10px);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 5px 6px 14px rgba(0, 0, 0, 0.2);
+  &:hover {
+    scale: 3px;
+  }
+  .image-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .content-detail {
+    padding: 8px;
+    .title {
+      margin: 0px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .author {
+      margin: 0px;
+      margin-top: 4px;
+      font-size: 10px;
+    }
+    .body {
+      margin: 0px;
+      margin: 18px;
+      font-size: 15px;
+      text-align: justify;
+    }
+  }
+}

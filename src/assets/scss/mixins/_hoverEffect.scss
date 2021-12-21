@@ -1,0 +1,7 @@
+@mixin hoverEffect(
+    $op : .7,
+    $tra : .3s ease-in-out
+    ) {
+    opacity: $op;
+    transition: $tra;
+}
