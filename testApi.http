@@ -1,0 +1,17 @@
+// GET One
+# GET http://localhost:4000/v1/blog/post/61daaf835b77d3ab238c5119
+
+// Get All Data without Query Param
+// GET http://localhost:4000/v1/blog/posts
+
+// Get All Data with Query Param
+# GET http://localhost:4000/v1/blog/posts?page=2&perPage=3
+
+// Post Data
+# POST http://localhost:4000/v1/blog/post
+
+// Put Data
+# PUT http://localhost:4000/v1/blog/post/61d5a6df8207deb15af65e84
+
+// Delete Data
+# DELETE http://localhost:4000/v1/blog/post/61d5a6df8207deb15af65e84

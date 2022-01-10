@@ -14,7 +14,7 @@ export default function CreateBlog() {
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate('/');
+    navigate(-1);
   };
   return (
     <div className='create-blog-wrapper'>

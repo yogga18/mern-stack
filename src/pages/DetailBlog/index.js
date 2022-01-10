@@ -9,7 +9,7 @@ export default function DetailBlog() {
     'https://www.insertcart.com/wp-content/uploads/2018/05/thumbnail.jpg';
 
   const goBackHome = () => {
-    navigate('/');
+    navigate(-1);
   };
 
   return (
