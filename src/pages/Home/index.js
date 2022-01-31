@@ -1,11 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Spiner } from '../../assets/images';
 import { Blogitems, Button, Gap } from '../../componentes';
 import './Home.scss';
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
   const [dataBlog, usedataBlog] = useState([]);
+  const spiner = Spiner; // image SPINNER
   const URL = 'http://localhost:4000/'; // Base URL
   const navigate = useNavigate();
 
@@ -15,6 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchApi = async () => {
+      setLoading(true);
       const data = await axios
         .get(`${URL}v1/blog/posts`)
         .then((res) => {
@@ -22,6 +26,9 @@ export default function Home() {
         })
         .catch((err) => {
           console.log(err);
+        })
+        .finally(() => {
+          setLoading(false);
         });
     };
     fetchApi();
@@ -34,6 +41,8 @@ export default function Home() {
       </div>
       <Gap height={20} />
       <div className='content-wrapper'>
+        {loading && <img alt='spinner-loading' src={spiner} />}
+
         {dataBlog.map((blogPost) => {
           return (
             <Blogitems
@@ -47,12 +56,6 @@ export default function Home() {
             />
           );
         })}
-        {/* <Blogitems className='blog-item' />
-        <Blogitems />
-        <Blogitems />
-        <Blogitems />
-        <Blogitems />
-        <Blogitems /> */}
       </div>
       <div className='pagination'>
         <Button title='Previous' />

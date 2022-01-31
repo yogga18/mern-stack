@@ -1,13 +1,13 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Readmore } from '../../componentes';
 import './Detailblog.scss';
 
 export default function DetailBlog() {
+  // const [loading,setLoading] = useState(false)
   const navigate = useNavigate();
   const img =
     'https://www.insertcart.com/wp-content/uploads/2018/05/thumbnail.jpg';
-
+  // const spiner = Spiner;
   const goBackHome = () => {
     navigate(-1);
   };

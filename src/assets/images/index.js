@@ -8,15 +8,18 @@ import Instagram from '../icons/logo-ig.jpg';
 import Github from '../icons/logo-github.png';
 import Medium from '../icons/logo-medium.png';
 import Linkedin from '../icons/logo-linkedin.png';
+// Spiner
+import Spiner from '../images/spiner.gif';
 
 export {
-    RegisterBg,
-    RegisterSide,
-    LoginBg,
-    Pacers,
-    LogoWa,
-    Instagram,
-    Github,
-    Medium,
-    Linkedin
-}
+  RegisterBg,
+  RegisterSide,
+  LoginBg,
+  Pacers,
+  LogoWa,
+  Instagram,
+  Github,
+  Medium,
+  Linkedin,
+  Spiner,
+};
